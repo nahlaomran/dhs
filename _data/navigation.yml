@@ -1,9 +1,17 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+- title: "A1"
+  url: /dhs/A1/
+- title: "A2"
+  url: /dhs/A2/
+- title: "A3"
+  url: /dhs/A3/
+- title: "A4"
+  url: /dhs/A4/  
+- title: "About"
+  url: /dhs/about/
+- title: "Posts"
+  url: /posts/
+- title: "Categories"
+  url: /categories/
+- title: "Tags"
+  url: /tags/

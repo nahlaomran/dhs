@@ -1,8 +1,12 @@
 ---
-permalink: /about/
+permalink: /dhs/about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hello! I’m Nahla Omran, a student at NYU Abu Dhabi studying in the Data and Human Space course. I am interested in how data shapes the way people move through cities, build communities, and understand the world around them.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+My work sits at the intersection of digital culture, civic life, and design. I enjoy examining patterns in everyday systems and asking how technology can be used more thoughtfully, ethically, and creatively. Through this course, I am learning to turn raw information into stories that make human experiences more visible.
+
+I am especially interested in projects that connect research, visual storytelling, and public engagement. Whether it is analyzing a dataset, building a visual narrative, or reflecting on the social implications of technology, I am motivated by work that helps people see complexity in a more accessible way.
+
+This portfolio documents my assignments and the ideas I am developing throughout the semester.
