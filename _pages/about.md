@@ -1,5 +1,5 @@
 ---
-permalink: /dhs/about/
+permalink: /about/
 title: "About"
 ---
 
