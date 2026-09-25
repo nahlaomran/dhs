@@ -13,7 +13,7 @@ this is my first assigbment post
 
 <div style="width:100%; height:70vh;">
   <iframe
-    src="{{ '/assets/images/maps/AE_featuremap.html' | relative_url }}"
+    src="{{ '/assets/maps/AE_featuremap.html' | relative_url }}"
     style="width:100%; height:100%; border:0;"
     loading="lazy">
   </iframe>
