@@ -9,7 +9,7 @@ tags:
   - F26
 ---
 
-this is my first assigbment post 
+this is my first assignment post 
 
 <div style="width:100%; height:70vh;">
   <iframe
