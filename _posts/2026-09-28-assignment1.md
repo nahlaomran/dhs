@@ -41,7 +41,7 @@ Populated places showed another interesting pattern. There were a few populated 
 <div style="width:100%; overflow:hidden;">
   <iframe
     src="{{ '/assets/images/LiwaArea.png' | relative_url }}"
-    style="width:100%; height:100%; border:0;"
+    style="width:100%; height:auto%; border:0;"
     loading="lazy">
   </iframe>
 </div>
