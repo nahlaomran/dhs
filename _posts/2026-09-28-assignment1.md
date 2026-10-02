@@ -39,12 +39,11 @@ Populated places showed another interesting pattern. There were a few populated 
 
 
 <div style="width:100%; height:auto;">
-  <iframe
+  <img
     src="{{ '/assets/images/LiwaArea.png' | relative_url }}"
-    style="width:100%; height:auto%; border:0;"
-    loading="lazy">
-  </iframe>
-</div>
+    alt="Liwa area map"
+    style="width:100%; height:auto%; display:0;">
+</div> 
 Caption: Zooming into the southwestern UAE reveals a curved concentration of populated-place features toward the Saudi Arabian border
 
 This area caught my attention because I recognized the name Liwa. Liwa is known for its desert festivals during the winter, and many people from Abu Dhabi and Dubai travel there to attend the festivals and see dune motorsports. Because I was curious about what the populated places around Liwa actually represented, I asked an Emirati friend who has been there. She explained that Liwa has many densely populated villages, which helped me understand that the PPL points on the map actually do represent the villages and smaller settlements rather than only large urban areas. It was interesting to see how these villages appear to form an almost curved line along a common street across the map. 
