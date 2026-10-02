@@ -38,7 +38,7 @@ I was also surprised that Bani YAS, which is considered a tribal confederation a
 Populated places showed another interesting pattern. There were a few populated places around Abu Dhabi City, Al Ain, and Dubai, but I was particularly surprised by the density of PPL points around Fujairah and Ras Al Khaimah. One of the most unexpected concentrations appeared southwest of Abu Dhabi, where a curved line of populated-place points occurs near the Saudi Arabian border. 
 
 
-<div style="width:100%; overflow:hidden;">
+<div style="width:100%; height:auto;">
   <iframe
     src="{{ '/assets/images/LiwaArea.png' | relative_url }}"
     style="width:100%; height:auto%; border:0;"
