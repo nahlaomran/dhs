@@ -38,15 +38,14 @@ I was also surprised that Bani YAS, which is considered a tribal confederation a
 Populated places showed another interesting pattern. There were a few populated places around Abu Dhabi City, Al Ain, and Dubai, but I was particularly surprised by the density of PPL points around Fujairah and Ras Al Khaimah. One of the most unexpected concentrations appeared southwest of Abu Dhabi, where a curved line of populated-place points occurs near the Saudi Arabian border. 
 
 
-<div style="width:80%; height:100vh;">
+<div style="width:80%; height:70vh;">
   <iframe
     src="{{ '/assets/images/LiwaArea.png' | relative_url }}"
     style="width:100%; height:100%; border:0;"
     loading="lazy">
   </iframe>
 </div>
-
-###### Caption: Zooming into the southwestern UAE reveals a curved concentration of populated-place features toward the Saudi Arabian border
+Caption: Zooming into the southwestern UAE reveals a curved concentration of populated-place features toward the Saudi Arabian border
 
 This area caught my attention because I recognized the name Liwa. Liwa is known for its desert festivals during the winter, and many people from Abu Dhabi and Dubai travel there to attend the festivals and see dune motorsports. Because I was curious about what the populated places around Liwa actually represented, I asked an Emirati friend who has been there. She explained that Liwa has many densely populated villages, which helped me understand that the PPL points on the map actually do represent the villages and smaller settlements rather than only large urban areas. It was interesting to see how these villages appear to form an almost curved line along a common street across the map. 
 
