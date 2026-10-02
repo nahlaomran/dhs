@@ -9,7 +9,7 @@ tags:
   - F26
 ---
 
-##Background and Expectations 
+## Background and Expectations 
 
 Before beginning the analysis, I already knew that the UAE’s most populated cities are Abu Dhabi, Dubai, and Sharjah. I also had some background knowledge of the country’s history, including that the UAE was united in 1971 and is made up of seven emirates. Geographically, the UAE is located on the southeastern edge of the Arabian Peninsula and borders Saudi Arabia and Oman, with the Persian Gulf to the north and the Strait of Hormuz connecting it to the Gulf of Oman. I also knew that the UAE has large sandy deserts and dunes, as well as mountains, particularly toward the borders of Oman and around Al Ain. Having lived in the UAE for most of my life, I was also familiar with the country’s importance in oil and gas production and its growing diversity. 
 
@@ -29,7 +29,7 @@ The main feature codes available in the dataset were PPLX, or section of populat
 </div>
 
 
-##Computational Insights 
+## Computational Insights 
 
 After filtering and mapping the three features using the Posit Cloud notebook, the first pattern I noticed was that wells were fairly dispersed across the country, with a slight concentration toward the northeastern part of the UAE, around areas such as Sharjah and Al Dhaid. Tribal areas, in contrast, were much more concentrated in the north, particularly around the older areas of Ras Al Khaimah and Fujairah. There were also around eight outliers much farther south. This was different from my original expectation that tribal areas would be more concentrated in the southern UAE.
 
@@ -38,7 +38,7 @@ I was also surprised that Bani YAS, which is considered a tribal confederation a
 Populated places showed another interesting pattern. There were a few populated places around Abu Dhabi City, Al Ain, and Dubai, but I was particularly surprised by the density of PPL points around Fujairah and Ras Al Khaimah. One of the most unexpected concentrations appeared southwest of Abu Dhabi, where a curved line of populated-place points occurs near the Saudi Arabian border. 
 
 
-<div style="width:100%; height:70vh;">
+<div style="width:144%; height:144vh;">
   <iframe
     src="{{ '/assets/images/LiwaArea.png' | relative_url }}"
     style="width:100%; height:100%; border:0;"
@@ -46,6 +46,7 @@ Populated places showed another interesting pattern. There were a few populated 
   </iframe>
 </div>
 
+###### Zooming into the southwestern UAE reveals a curved concentration of populated-place features toward the Saudi Arabian border
 
 This area caught my attention because I recognized the name Liwa. Liwa is known for its desert festivals during the winter, and many people from Abu Dhabi and Dubai travel there to attend the festivals and see dune motorsports. Because I was curious about what the populated places around Liwa actually represented, I asked an Emirati friend who has been there. She explained that Liwa has many densely populated villages, which helped me understand that the PPL points on the map actually do represent the villages and smaller settlements rather than only large urban areas. It was interesting to see how these villages appear to form an almost curved line along a common street across the map. 
 
@@ -60,7 +61,7 @@ This connects to the “Do Maps Lie?” video because it made me think about how
 This connects to Kitchin and Lauriault’s argument that data is never simply “raw.” They explain that data is produced through categories, standards, technologies, institutions, and practices that influence what is recorded and represented. My experience with the PPL and WLL codes showed me how this can happen. A point labeled “populated place” or “well” seems straightforward, but the label does not really tell me everything about what the point represents. 
 
 
-##GeoNames as a Data Assemblage 
+## GeoNames as a Data Assemblage 
 
 Geonames can be understood as a data assemblage because data is constructed from information gathered from different sources and shaped by human decisions about what geographic features are included, how they are classified, and how they are represented spatially. Kitchin and Lauriault describe a data assemblage as the different institutions, infrastructures, practices, people, standards, and forms of knowledge that contribute to producing and managing data (8-9).
 
@@ -75,7 +76,7 @@ Looking at the sources used by GeoNames, I also noticed that it draws informatio
 Kitchin and Lauriault argue that data assemblages are constantly changing as technologies, institutions, knowledge, and practices change. This made me think about the 2012 and 2024 updates in my dataset. The GeoNames map I interacted with is not necessarily a full picture of the UAE. If the dataset is updated, reclassified, or combined with other sources in the future, the map and patterns I see could also change.
 
 
-##Transferability
+## Transferability
 
 As a political science major, I found this assignment useful because I learned how to navigate new coding and mapping techniques. I learned how to use a Posit Cloud notebook, run different packages, filter a dataset, observe spatial patterns, and think about where data comes from and how it's gathered. 
 
