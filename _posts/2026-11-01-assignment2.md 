@@ -9,6 +9,7 @@ tags:
   - R
   - F26
 ---
+Done by: Nahla and Nora
 
 <h2>Introduction</h2>
 
@@ -35,6 +36,7 @@ tags:
 </div>
 
 
+
 <p>Nevertheless, a greater number of locations does not necessarily mean greater geographical accuracy. When zooming out, the automated spaCy + geopy map contains several points outside the United States or in geographical areas that do not correspond to the expected route. The LLM-generated map displays a similar pattern, with many of the same geographical outliers appearing in both automated methods.<p>
 
 
@@ -47,6 +49,7 @@ tags:
 Caption: Side by side comparison of outliers in both automated methods.
 
 
+
 <p>This similarity is particularly interesting because it suggests that the two automated approaches encounter comparable difficulties when interpreting place names without sufficient geographical context. For example, Catonsville in Baltimore appears twice in the automated LLM method and four times in the automated spaCy and geopy method. Although repeated references can be legitimate, they can also produce an exaggerated impression of spatial concentration if they are not distinguished from separate geographical locations.<p>
 
 
@@ -57,6 +60,7 @@ Caption: Side by side comparison of outliers in both automated methods.
    style="width:100%; height:auto%; display:0;">
 </div>
 Caption: Sided by side comparison of Catonsville in Baltimore.
+
 
 
 <p>Overall, the three methods represent the general direction of the journey relatively similarly. However, the largest discrepancies become apparent when zooming out and viewing the maps at a wider geographical scale. While manual annotation produces fewer locations, these locations appear more consistent with the expected geographical area of the road trip. The automated methods capture more references but also introduce locations that appear unrelated to the journey.<p>
@@ -76,6 +80,7 @@ Caption: Sided by side comparison of Catonsville in Baltimore.
 Caption: Franklin Street in New York LLM and spaCy + geopy.
 
 
+
 <p>Another example concerns Saint Pauls. In section four, the novel mentions a BP gas station in Saint Pauls. There is a Saint Pauls in North Carolina, which would be geographically plausible given the journey. However, the automated method also identifies a BP gas station in Minnesota that seems to be near a city called Saint Paul. This demonstrates how a system can recognise a place name without necessarily identifying the location that best fits the surrounding context.<p>
 
 
@@ -88,6 +93,7 @@ Caption: Franklin Street in New York LLM and spaCy + geopy.
 Caption: BP gas station in Minnesota VS Saint Pauls in North Carolina.
 
 
+
 <p>Manual annotation also has inconsistencies. For example, Columbia appears five times as separate points in the manual annotations. This may have resulted from an annotator selecting yes to all in Recogito without checking whether they represented distinct locations. As well as it seems that two different annotators annotated Columbia once twice and the other three times. Additionally, the selected Columbia appears to be in Tennessee, despite being relatively far from the expected highway route. This illustrates that human annotation is not automatically accurate either. Different annotators can make different decisions, and mistakes during annotation can create misleading spatial concentrations.<p>
 
 
@@ -98,6 +104,7 @@ Caption: BP gas station in Minnesota VS Saint Pauls in North Carolina.
    style="width:100%; height:auto%; display:0;">
 </div>
 Caption: Columbia annotated five times causing an appearance of dense location points.
+
 
 
 <p>These discrepancies are therefore not entirely random. They appear particularly likely when place names are ambiguous or when there isn’t enough context. Misspellings of streets or locations can also complicate the process. Both human and automated methods are affected by the quality of the original text, although they respond to these difficulties differently.<p>
@@ -135,3 +142,4 @@ Caption: Columbia annotated five times causing an appearance of dense location p
 
 <p>Ultimately, the methods demonstrate that computational approaches do not simply reproduce geographical reality. They construct representations of space based on the information available to them and the decisions made throughout the process. Understanding these limitations is essential when using automated methods to interpret human movement, geographical narratives and the spaces represented in textual data.<p>
 
+READY FOR GRADING 
