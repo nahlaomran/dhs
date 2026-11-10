@@ -26,6 +26,8 @@ search: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -60,7 +62,7 @@ plugins:
 author:
   name   : "Nahla Omran"
   avatar : "/assets/images/image.png"
-  bio    : "NYU Abu Dhabi | [Political Science]"
+  bio    : "NYU Abu Dhabi | [Political Science Major]"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -71,9 +73,6 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/nahlaomran"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nahlaomran"
