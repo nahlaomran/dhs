@@ -17,13 +17,13 @@ tags:
 <p>This analysis compares three approaches to geocoding the locations mentioned in the novel: manual annotation, automated geocoding using spaCy and geopy, and automated geocoding using a large language model (LLM). By examining their spatial distributions, similarities and discrepancies, this comparison explores the extent to which automated systems can accurately represent geographical space and the importance of human interpretation when working with ambiguous or incomplete textual data.<p>
 
 
-## Comparing the Spatial Distribution of Locations 
+<h2>Comparing the Spatial Distribution of Locations</h2> 
 
-When comparing the three maps, one noticeable pattern is that all methods identify several of the major cities associated with the journey. However, they differ in the distribution and accuracy of the locations they produce.
+<p>When comparing the three maps, one noticeable pattern is that all methods identify several of the major cities associated with the journey. However, they differ in the distribution and accuracy of the locations they produce.<p>
 
-The manually geocoded map shows a relatively concentrated distribution of locations around cities along the journey, including Philadelphia, Baltimore, Washington, Columbia, Biloxi and New Orleans. New Orleans, the destination, has the greatest concentration of marked locations. However, an interesting thing to point out is that New York, where the journey begins, does not appear to have any geocoded locations. There are also noticeable gaps between certain cities, particularly between Washington and Raleigh. These gaps may partly reflect the incomplete nature of the text available for annotation, as some sections of the original novel may have been removed. This means that when the novel doesn't clearly mention a place, it's harder for a human annotator to identify and mark it on the map.
+<p>The manually geocoded map shows a relatively concentrated distribution of locations around cities along the journey, including Philadelphia, Baltimore, Washington, Columbia, Biloxi and New Orleans. New Orleans, the destination, has the greatest concentration of marked locations. However, an interesting thing to point out is that New York, where the journey begins, does not appear to have any geocoded locations. There are also noticeable gaps between certain cities, particularly between Washington and Raleigh. These gaps may partly reflect the incomplete nature of the text available for annotation, as some sections of the original novel may have been removed. This means that when the novel doesn't clearly mention a place, it's harder for a human annotator to identify and mark it on the map.<p>
 
-In comparison, the spaCy and geopy method produces a larger number of geocoded locations, creating a more continuous representation of the journey. The automated method identified more geographical references than the manual method. This could be because it picked up locations that human annotators either overlooked or deliberately excluded because they did not appear relevant to the journey.
+<p>In comparison, the spaCy and geopy method produces a larger number of geocoded locations, creating a more continuous representation of the journey. The automated method identified more geographical references than the manual method. This could be because it picked up locations that human annotators either overlooked or deliberately excluded because they did not appear relevant to the journey.<p>
 
 
 <div style="width:100%; height:70vh;">
@@ -35,7 +35,7 @@ In comparison, the spaCy and geopy method produces a larger number of geocoded l
 </div>
 
 
-Nevertheless, a greater number of locations does not necessarily mean greater geographical accuracy. When zooming out, the automated spaCy + geopy map contains several points outside the United States or in geographical areas that do not correspond to the expected route. The LLM-generated map displays a similar pattern, with many of the same geographical outliers appearing in both automated methods.
+<p>Nevertheless, a greater number of locations does not necessarily mean greater geographical accuracy. When zooming out, the automated spaCy + geopy map contains several points outside the United States or in geographical areas that do not correspond to the expected route. The LLM-generated map displays a similar pattern, with many of the same geographical outliers appearing in both automated methods.<p>
 
 
 <div style="width:100%; height:auto;">
@@ -47,7 +47,7 @@ Nevertheless, a greater number of locations does not necessarily mean greater ge
 Caption: Side by side comparison of outliers in both automated methods.
 
 
-This similarity is particularly interesting because it suggests that the two automated approaches encounter comparable difficulties when interpreting place names without sufficient geographical context. For example, Catonsville in Baltimore appears twice in the automated LLM method and four times in the automated spaCy and geopy method. Although repeated references can be legitimate, they can also produce an exaggerated impression of spatial concentration if they are not distinguished from separate geographical locations.
+<p>This similarity is particularly interesting because it suggests that the two automated approaches encounter comparable difficulties when interpreting place names without sufficient geographical context. For example, Catonsville in Baltimore appears twice in the automated LLM method and four times in the automated spaCy and geopy method. Although repeated references can be legitimate, they can also produce an exaggerated impression of spatial concentration if they are not distinguished from separate geographical locations.<p>
 
 
 <div style="width:100%; height:auto;">
@@ -59,12 +59,12 @@ This similarity is particularly interesting because it suggests that the two aut
 Caption: Sided by side comparison of Catonsville in Baltimore.
 
 
-Overall, the three methods represent the general direction of the journey relatively similarly. However, the largest discrepancies become apparent when zooming out and viewing the maps at a wider geographical scale. While manual annotation produces fewer locations, these locations appear more consistent with the expected geographical area of the road trip. The automated methods capture more references but also introduce locations that appear unrelated to the journey.
+<p>Overall, the three methods represent the general direction of the journey relatively similarly. However, the largest discrepancies become apparent when zooming out and viewing the maps at a wider geographical scale. While manual annotation produces fewer locations, these locations appear more consistent with the expected geographical area of the road trip. The automated methods capture more references but also introduce locations that appear unrelated to the journey.<p>
 
 
-## Discrepancies, Ambiguity, and Annotator Differences 
+<h2>Discrepancies, Ambiguity, and Annotator Differences</h2> 
 
-One example where the manual and automated methods differ is Franklin Street in New York. New York is where the journey begins, yet Franklin Street appears in section 6 of the novel, towards the end of the journey. This raises questions about whether the car actually passed through this location or whether it was simply mentioned by the machine in its generated text. Another interesting detail is that there are multiple streets named Franklin Street in New York, and the automated method identifies several of them. However, this does not necessarily mean that the car travelled through all these streets. It makes us question whether the system is identifying actual locations the car encountered or simply matching place named mentioned in the text to multiple possible geographical locations. 
+<p>One example where the manual and automated methods differ is Franklin Street in New York. New York is where the journey begins, yet Franklin Street appears in section 6 of the novel, towards the end of the journey. This raises questions about whether the car actually passed through this location or whether it was simply mentioned by the machine in its generated text. Another interesting detail is that there are multiple streets named Franklin Street in New York, and the automated method identifies several of them. However, this does not necessarily mean that the car travelled through all these streets. It makes us question whether the system is identifying actual locations the car encountered or simply matching place named mentioned in the text to multiple possible geographical locations.<p>
 
 
 <div style="width:100%; height:auto;">
@@ -76,7 +76,7 @@ One example where the manual and automated methods differ is Franklin Street in 
 Caption: Franklin Street in New York LLM and spaCy + geopy.
 
 
-Another example concerns Saint Pauls. In section four, the novel mentions a BP gas station in Saint Pauls. There is a Saint Pauls in North Carolina, which would be geographically plausible given the journey. However, the automated method also identifies a BP gas station in Minnesota that seems to be near a city called Saint Paul. This demonstrates how a system can recognise a place name without necessarily identifying the location that best fits the surrounding context.
+<p>Another example concerns Saint Pauls. In section four, the novel mentions a BP gas station in Saint Pauls. There is a Saint Pauls in North Carolina, which would be geographically plausible given the journey. However, the automated method also identifies a BP gas station in Minnesota that seems to be near a city called Saint Paul. This demonstrates how a system can recognise a place name without necessarily identifying the location that best fits the surrounding context.<p>
 
 
 <div style="width:100%; height:auto;">
@@ -88,7 +88,7 @@ Another example concerns Saint Pauls. In section four, the novel mentions a BP g
 Caption: BP gas station in Minnesota VS Saint Pauls in North Carolina.
 
 
-Manual annotation also has inconsistencies. For example, Columbia appears five times as separate points in the manual annotations. This may have resulted from an annotator selecting yes to all in Recogito without checking whether they represented distinct locations. As well as it seems that two different annotators annotated Columbia once twice and the other three times. Additionally, the selected Columbia appears to be in Tennessee, despite being relatively far from the expected highway route. This illustrates that human annotation is not automatically accurate either. Different annotators can make different decisions, and mistakes during annotation can create misleading spatial concentrations.
+<p>Manual annotation also has inconsistencies. For example, Columbia appears five times as separate points in the manual annotations. This may have resulted from an annotator selecting yes to all in Recogito without checking whether they represented distinct locations. As well as it seems that two different annotators annotated Columbia once twice and the other three times. Additionally, the selected Columbia appears to be in Tennessee, despite being relatively far from the expected highway route. This illustrates that human annotation is not automatically accurate either. Different annotators can make different decisions, and mistakes during annotation can create misleading spatial concentrations.<p>
 
 
 <div style="width:100%; height:auto;">
@@ -100,38 +100,38 @@ Manual annotation also has inconsistencies. For example, Columbia appears five t
 Caption: Columbia annotated five times causing an appearance of dense location points.
 
 
-These discrepancies are therefore not entirely random. They appear particularly likely when place names are ambiguous or when there isn’t enough context. Misspellings of streets or locations can also complicate the process. Both human and automated methods are affected by the quality of the original text, although they respond to these difficulties differently.
+<p>These discrepancies are therefore not entirely random. They appear particularly likely when place names are ambiguous or when there isn’t enough context. Misspellings of streets or locations can also complicate the process. Both human and automated methods are affected by the quality of the original text, although they respond to these difficulties differently.<p>
 
 
-## Human Interpretation versus Automation 
+<h2>Human Interpretation versus Automation</h2> 
 
-An important distinction between the methods is the role of human judgement. Manual geocoding requires annotators to interpret a place name within the wider context of the novel. Rather than simply identifying a matching geographical name, an annotator must consider whether the location is relevant to the journey, whether it exists and whether its geographical position makes sense.
+<p>An important distinction between the methods is the role of human judgement. Manual geocoding requires annotators to interpret a place name within the wider context of the novel. Rather than simply identifying a matching geographical name, an annotator must consider whether the location is relevant to the journey, whether it exists and whether its geographical position makes sense.<p>
 
-For example, when encountering a place such as Saint Pauls, a human annotator can consider the surrounding references and the direction of travel before selecting a location. Similarly, when encountering a street name that exists in several cities, the annotator can use the narrative to decide which interpretation is most plausible. This contextual reasoning can help prevent unrelated locations from appearing on the map.
+<p>For example, when encountering a place such as Saint Pauls, a human annotator can consider the surrounding references and the direction of travel before selecting a location. Similarly, when encountering a street name that exists in several cities, the annotator can use the narrative to decide which interpretation is most plausible. This contextual reasoning can help prevent unrelated locations from appearing on the map.<p>
 
-Automated systems, on the other hand, operate through different levels of extraction and matching. The spaCy method identifies place names in the text, while geopy is used to find their geographical coordinates so they can be placed on the map. These processes do not necessarily establish whether a location is relevant to the actual journey.
+<p>Automated systems, on the other hand, operate through different levels of extraction and matching. The spaCy method identifies place names in the text, while geopy is used to find their geographical coordinates so they can be placed on the map. These processes do not necessarily establish whether a location is relevant to the actual journey.<p>
 
-The LLM method takes a different approach, using AI to understand place names in the text and match them to geographical locations. However, its output still depends on the instructions, contextual information and assumptions provided to it. If it isn't given enough information about where a place is located, it may identify a location that seems correct but is actually wrong.
+<p>The LLM method takes a different approach, using AI to understand place names in the text and match them to geographical locations. However, its output still depends on the instructions, contextual information and assumptions provided to it. If it isn't given enough information about where a place is located, it may identify a location that seems correct but is actually wrong.<p>
 
-This comparison demonstrates that automation is useful for processing large quantities of text and identifying potential locations, but human interpretation remains important when determining what those locations mean. However, manual annotation is not always accurate either, as different annotators may interpret the same place name differently or make different decisions about which locations are relevant to the journey. As a result, the final map can reflect the judgement of the person annotating rather than the actual route taken. Therefore, neither method should be treated as completely objective.
-
-
-## Constructing Geographical Data 
-
-These limitations become particularly significant when considering how the original text of 1 the Road was produced. The novel did not simply record the geographical locations visited by the car. It combined several different sources of information to construct a narrative. Its GPS recorded the car's geographical position, while its camera, microphone and internal clock provided additional inputs. The Foursquare database also supplied information about nearby places and their associated descriptions.
-
-Understanding this helped us make sense of some of the discrepancies we observed in the different methods. Not every place mentioned in the novel was necessarily somewhere the car physically visited. Some references may have come from the machine’s interaction with its database rather than from its actual surroundings. This helped us understand why certain locations appeared far away from the route between New York and New Orleans, and why the automated methods sometimes identified places that seemed unrelated to the journey. It also made us consider that the geographical information in the novel is not limited to the car’s actual route, but also includes nearby businesses and other places introduced through the machine's interaction with its data sources. 
-
-This raises a broader question about how automated systems construct data. The AI machine on the car transformed its surroundings into information that could be processed by an algorithm, but the resulting narrative was shaped by the available technological inputs and databases. Foursquare, for instance, provided a particular representation of geographical space through its registered businesses and places. Locations that were not represented in the database or were not captured by the car's sensors could be absent from the resulting narrative.
-
-The comparison between manual and automated geocoding therefore involves multiple layers of automation. First, the AI machine on the car transformed real-world observations into a machine-generated text. Second, spaCy and the LLM identified geographical references within that text. Finally, geopy and the relevant geocoding service converted these references into coordinates. At each stage, information was selected, interpreted and potentially distorted.
-
-Comparing the number and distribution of locations in the available text with the original journey may provide clues about missing sections, but a map alone cannot establish precisely how much text was removed or edited.
+<p>This comparison demonstrates that automation is useful for processing large quantities of text and identifying potential locations, but human interpretation remains important when determining what those locations mean. However, manual annotation is not always accurate either, as different annotators may interpret the same place name differently or make different decisions about which locations are relevant to the journey. As a result, the final map can reflect the judgement of the person annotating rather than the actual route taken. Therefore, neither method should be treated as completely objective.<p>
 
 
-## Conclusion 
+<h2>Constructing Geographical Data</h2> 
 
-The comparison of manual and automated geocoding reveals that producing a geographical representation of a journey involves more than identifying place names and assigning coordinates. Although automated methods identify a greater number of potential locations, they can struggle with ambiguity, geographical context and the distinction between a place mentioned in a text and a place actually visited. Manual annotation can address some of these issues through contextual interpretation, but it is also vulnerable to human error and inconsistencies between annotators.
+<p>These limitations become particularly significant when considering how the original text of 1 the Road was produced. The novel did not simply record the geographical locations visited by the car. It combined several different sources of information to construct a narrative. Its GPS recorded the car's geographical position, while its camera, microphone and internal clock provided additional inputs. The Foursquare database also supplied information about nearby places and their associated descriptions.<p>
 
-Ultimately, the methods demonstrate that computational approaches do not simply reproduce geographical reality. They construct representations of space based on the information available to them and the decisions made throughout the process. Understanding these limitations is essential when using automated methods to interpret human movement, geographical narratives and the spaces represented in textual data.
+<p>Understanding this helped us make sense of some of the discrepancies we observed in the different methods. Not every place mentioned in the novel was necessarily somewhere the car physically visited. Some references may have come from the machine’s interaction with its database rather than from its actual surroundings. This helped us understand why certain locations appeared far away from the route between New York and New Orleans, and why the automated methods sometimes identified places that seemed unrelated to the journey. It also made us consider that the geographical information in the novel is not limited to the car’s actual route, but also includes nearby businesses and other places introduced through the machine's interaction with its data sources.<p>
+
+<p>This raises a broader question about how automated systems construct data. The AI machine on the car transformed its surroundings into information that could be processed by an algorithm, but the resulting narrative was shaped by the available technological inputs and databases. Foursquare, for instance, provided a particular representation of geographical space through its registered businesses and places. Locations that were not represented in the database or were not captured by the car's sensors could be absent from the resulting narrative.<p>
+
+<p>The comparison between manual and automated geocoding therefore involves multiple layers of automation. First, the AI machine on the car transformed real-world observations into a machine-generated text. Second, spaCy and the LLM identified geographical references within that text. Finally, geopy and the relevant geocoding service converted these references into coordinates. At each stage, information was selected, interpreted and potentially distorted.<p>
+
+<p>Comparing the number and distribution of locations in the available text with the original journey may provide clues about missing sections, but a map alone cannot establish precisely how much text was removed or edited.<p>
+
+
+<h2>Conclusion</h2> 
+
+<p>The comparison of manual and automated geocoding reveals that producing a geographical representation of a journey involves more than identifying place names and assigning coordinates. Although automated methods identify a greater number of potential locations, they can struggle with ambiguity, geographical context and the distinction between a place mentioned in a text and a place actually visited. Manual annotation can address some of these issues through contextual interpretation, but it is also vulnerable to human error and inconsistencies between annotators.<p>
+
+<p>Ultimately, the methods demonstrate that computational approaches do not simply reproduce geographical reality. They construct representations of space based on the information available to them and the decisions made throughout the process. Understanding these limitations is essential when using automated methods to interpret human movement, geographical narratives and the spaces represented in textual data.<p>
 
